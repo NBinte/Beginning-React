@@ -4,15 +4,14 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-
   const [count, setCount] = useState(0);
 
-  function decrement(){
-    setCount( prevCount => prevCount - 1 );
+  function decrement() {
+    setCount(prevCount => prevCount - 1);
   }
 
-  function increment(){
-    setCount( prevCount => prevCount + 1 );
+  function increment() {
+    setCount(prevCount => prevCount + 1);
   }
 
   const someStyle = {
@@ -25,14 +24,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
-        <Another name ="Tsuki"/>
+        <Another name="Tsuki" />
 
         <div>
           <span> {count} </span>
 
-          <button onClick={ decrement }> - </button>
-          <button onClick={ increment }> + </button>
+          <button onClick={decrement}> - </button>
+          <button onClick={increment}> + </button>
         </div>
 
         <img src={logo} className="App-logo" alt="logo" />
